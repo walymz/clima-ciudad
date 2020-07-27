@@ -24,7 +24,6 @@ const getDatosCiudad = async(dir) => {
      * y se obtiene un error si no hay nada o los datos de la ciudad si se obtuvo un resultado
      */
     if (consulta.data.Results.length === 0)
-    // Manejo del error
         throw Error("No se tienen datos de esa ciudad");
     else {
         const datos = consulta.data.Results[0];
